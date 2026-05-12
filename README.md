@@ -5,7 +5,7 @@ Jogo de Batalha Naval multiplayer em tempo real usando WebSockets.
 ## Tecnologias
 
 - **Servidor**: Node.js + `ws` (WebSocket)
-- **Cliente**: HTML + CSS + JavaScript (sem frameworks)
+- **Cliente**: HTML + CSS + JavaScript
 
 ## Instalação
 
