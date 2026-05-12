@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha Naval</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BATALHA NAVAL</h1>
+        <p>MULTIPLAYER</p>
+        <div id="player-badge"></div>
+    </header>
+
+    <!-- Conectando -->
+    <div id="screen-connecting" class="screen active">
+        <div class="card">
+            <div class="big-icon">⚓</div>
+            <p class="big-msg">Conectando ao servidor<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+        </div>
+    </div>
+
+    <!-- Aguardando oponente -->
+    <div id="screen-waiting" class="screen">
+        <div class="card">
+<p class="big-msg">Aguardando o segundo jogador<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+        </div>
+    </div>
+
+    <!-- Configurar frota -->
+    <div id="screen-setup" class="screen">
+        <p id="setup-status"></p>
+        <div id="ships-panel"></div>
+        <div class="controls">
+            <button id="btn-rotate">Rotacao: <span id="orient-label">Horizontal</span></button>
+            <button id="btn-reset" class="danger">Resetar</button>
+            <button id="btn-ready" class="success" disabled>Pronto!</button>
+        </div>
+        <div class="board-section">
+            <h3>Posicione seus navios</h3>
+            <div id="setup-board"></div>
+        </div>
+    </div>
+
+    <!-- Batalha -->
+    <div id="screen-battle" class="screen">
+        <div id="turn-display">Carregando...</div>
+        <p id="status-msg"></p>
+        <div class="boards-row">
+            <div class="board-section">
+                <h3>Meu Tabuleiro</h3>
+                <div id="my-board"></div>
+            </div>
+            <div class="board-section">
+                <h3>Tabuleiro Inimigo</h3>
+                <div id="enemy-board"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fim de Jogo -->
+    <div id="screen-gameover" class="screen">
+        <div id="gameover-msg"></div>
+        <p id="gameover-sub"></p>
+        <button onclick="location.reload()">Jogar Novamente</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

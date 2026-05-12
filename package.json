@@ -1,0 +1,12 @@
+{
+  "name": "batalha-naval",
+  "version": "1.0.0",
+  "description": "Jogo de Batalha Naval multiplayer com WebSockets",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
